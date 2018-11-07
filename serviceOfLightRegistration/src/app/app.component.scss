@@ -1,0 +1,10 @@
+.container-of-dashboard {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+  .cards-dashboard {
+    border: 1px solid black;
+    font-size: 20px;
+  }
+}
