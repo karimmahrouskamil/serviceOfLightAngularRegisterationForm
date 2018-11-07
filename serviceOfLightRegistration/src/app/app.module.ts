@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing-module';
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent
   ],
-  imports: [NgbModule,
+  imports: [
+    AppRoutingModule,
     BrowserModule
   ],
   providers: [],
