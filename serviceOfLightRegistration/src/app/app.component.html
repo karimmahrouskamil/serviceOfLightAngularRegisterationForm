@@ -1,8 +1,16 @@
 <div class="container-of-dashboard">
 
+  <form [formGroup]="makhdouminForm" (ngSubmit)="onSubmit()">
+    <label for="name">
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+    <label for="address">
+      address:
+      <input type="text" formControlName="address">
+    </label>
+    <button type="submit" [disabled]="!makhdouminForm.valid">Submit</button>
+  </form>
 
-
-  <div class="cards-dashboard">register new makhdoumin</div>
-  <div class="cards-dashboard">today is friday</div>
 
 </div>
