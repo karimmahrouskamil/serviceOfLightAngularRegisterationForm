@@ -24,6 +24,10 @@ this.makhdouminForm = new FormGroup({
 // tslint:disable-next-line:no-trailing-whitespace
 onSubmit() {
 console.log(this.makhdouminForm.value);
-this.makhdoumServ.createNewMakhdoum(this.makhdouminForm.value)
+this.makhdoumServ.createNewMakhdoum(this.makhdouminForm.value).subscribe(res => {
+  console.log(res);
+}, (err) => {
+  console.log(err);
+});
 }
 }

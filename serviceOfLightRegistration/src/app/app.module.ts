@@ -6,6 +6,7 @@ import { RegistrationComponent } from './registration/registration.component';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing-module';
 import { MakhdouminServiceService } from './makhdoumin-service/makhdoumin-service.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,7 @@ import { MakhdouminServiceService } from './makhdoumin-service/makhdoumin-servic
   ],
   imports: [
 
-    BrowserModule, AppRoutingModule, ReactiveFormsModule
+    BrowserModule, AppRoutingModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [MakhdouminServiceService],
   bootstrap: [AppComponent]
