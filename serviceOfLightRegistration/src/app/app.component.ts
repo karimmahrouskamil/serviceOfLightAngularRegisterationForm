@@ -17,7 +17,9 @@ constructor(public router: Router, public makhdoumServ: MakhdouminServiceService
 ngOnInit() {
 this.makhdouminForm = new FormGroup({
     name : new FormControl(''),
-    address:  new FormControl('')
+    address:  new FormControl(''),
+    phone: new FormControl(''),
+    HomePhone: new FormControl('')
 });
 }
 
