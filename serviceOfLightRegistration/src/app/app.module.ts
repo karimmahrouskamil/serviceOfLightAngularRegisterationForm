@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing-module';
+import { MakhdouminServiceService } from './makhdoumin-service/makhdoumin-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,7 @@ import { AppRoutingModule } from './app-routing-module';
 
     BrowserModule, AppRoutingModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MakhdouminServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
