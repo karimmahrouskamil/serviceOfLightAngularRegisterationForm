@@ -27,10 +27,14 @@ export class MakhdouminServiceService {
         'Content-Type': 'application/json'
       })
     };
-    return this.http.post('http://localhost:8080/users/addUser', makhdoumData, httpOptions)
+    return this.http.post<any>('http://localhost:8080/users/addUser', makhdoumData, httpOptions)
     .pipe(
       // catchError(this.handleError)
-    );
+    ).catch(this.formatErrors);
 
   }
+  private formatErrors(error: any) {
+    return Observable.throw(error.json());
+ }
+
 }
