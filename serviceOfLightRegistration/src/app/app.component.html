@@ -1,14 +1,14 @@
 <div class="container-of-dashboard">
 
   <form [formGroup]="makhdouminForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
+    <div class="form-group" formGroupName="personalInfo">
       <label for="name">
         Name: </label>
       <input type="text" placeholder="Name" class="form-control" formControlName="name">
 
     </div>
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="address">
         address:</label>
       <input type="text" placeholder="address" class="form-control" formControlName="address">
@@ -28,7 +28,7 @@
         Home phone:</label>
       <input type="text" placeholder="Home phone" class="form-control" formControlName="HomePhone">
 
-    </div>
+    </div> -->
 
 
     <button class="btn btn-primary" type="submit" [disabled]="!makhdouminForm.valid">Submit</button>
