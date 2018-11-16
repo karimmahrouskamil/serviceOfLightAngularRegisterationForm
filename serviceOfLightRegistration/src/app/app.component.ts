@@ -25,7 +25,10 @@ this.makhdouminForm = new FormGroup({
       flatNumber: new FormControl(''),
       zone: new FormControl(''),
       remarks: new FormControl('')
-    })
+    }),
+    Mobiles: new FormGroup({
+      MobilePhone : new FormControl('')
+    }),
   })
 });
 }
