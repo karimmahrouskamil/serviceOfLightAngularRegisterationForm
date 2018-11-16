@@ -32,6 +32,18 @@ this.makhdouminForm = new FormGroup({
       fatherPhone : new FormControl(''),
       motherPhone : new FormControl('')
     }),
+    school: new FormControl(''),
+    onlineInfo: new FormGroup({
+      facebook : new FormControl(''),
+      email : new FormControl('')
+    })
+  }),
+  churchAndSpiritualInfo: new FormGroup({
+    class : new FormControl(''),
+    fatherOfConfession : new FormControl(''),
+    servantFollowing : new FormControl(''),
+    chomosya : new FormControl(''),
+    Notes : new FormControl('')
   })
 });
 }
