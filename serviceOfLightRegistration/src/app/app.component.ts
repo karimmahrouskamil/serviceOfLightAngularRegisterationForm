@@ -22,6 +22,7 @@ this.makhdouminForm = new FormGroup({
       buildingNumber : new FormControl(''),
       streetName : new FormControl(''),
       floorNumber: new FormControl(''),
+      flatNumber: new FormControl(''),
       zone: new FormControl(''),
       remarks: new FormControl('')
     })
