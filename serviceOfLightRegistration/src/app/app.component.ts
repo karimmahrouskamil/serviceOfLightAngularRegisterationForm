@@ -19,7 +19,11 @@ this.makhdouminForm = new FormGroup({
   personalInfo : new FormGroup({
     name : new FormControl(''),
     address : new FormGroup({
-      buildingNumber : new FormControl('')
+      buildingNumber : new FormControl(''),
+      streetName : new FormControl(''),
+      floorNumber: new FormControl(''),
+      zone: new FormControl(''),
+      remarks: new FormControl('')
     })
   })
 });
