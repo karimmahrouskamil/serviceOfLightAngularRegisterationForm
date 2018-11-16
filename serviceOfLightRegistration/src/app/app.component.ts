@@ -15,6 +15,7 @@ constructor(public router: Router, public makhdoumServ: MakhdouminServiceService
 }
 
 ngOnInit() {
+
 this.makhdouminForm = new FormGroup({
   personalInfo : new FormGroup({
     name : new FormControl(''),
@@ -57,44 +58,15 @@ onSubmit() {
 console.log(this.makhdouminForm.value);
 this.makhdoumServ.createNewMakhdoum(this.makhdouminForm.value).subscribe(res => {
   console.log(res);
+  this.resetAllFields();
 }, (err) => {
   console.log(err);
 });
 }
+
+resetAllFields() {
+  this.makhdouminForm.reset();
+}
 }
 
-  // const vovo = {
 
-  //   'personalInfo': {
-  //     'name': 'margo',
-  //     'address': {
-  //       'buildingNumber': 5,
-  //       'streetName': 'Lololoalaoao',
-  //       'floorNumber': 32,
-  //       'flatNumber': 12,
-  //       'zone': 'B',
-  //       'remarks': 'left'
-  //     },
-  //     'Mobiles': {
-  //       'MobilePhone': [123123, 432403284],
-  //       'HomePhone': [5345345, 56546],
-  //       'fatherPhone': [23424, 654623],
-  //       'motherPhone': [234234, 54545]
-  //     },
-  //     'school': 'de la salle',
-  //     'birthDate': '2017-08-24T00:00:00.000Z',
-  //     'onlineInfo': {
-  //       'facebook': 'karim ',
-  //       'email': 'kkamil@eg'
-  //     }
-  //   },
-  //   'churchAndSpiritualInfo': {
-  //     'class': 1,
-  //     'fatherOfConfession': 'father youssef',
-  //     'servantFollowing': 'karim kamil',
-  //     'chomosya': 'esbaltos',
-  //     'Notes': 'quick note'
-  //   }
-  //   ,
-  //   'DateOfCreation': '2017-08-24T00:00:00.000Z'
-  // }
