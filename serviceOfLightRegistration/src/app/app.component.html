@@ -72,7 +72,8 @@
       <label for="motherPhone">
         school: </label>
       <input class="form-control" type="text" placeholder="school" formControlName="school">
-
+      <!-- birthdate -->
+      <input type="date" formControlName="birthDate" class="form-control">
 
       <!-- onlineInfo  form group-->
       <div class="form-group" formGroupName="onlineInfo">
@@ -92,20 +93,20 @@
     </div>
 
 
-      <!-- churchAndSpiritualInfo  form group-->
-      <div class="form-group" formGroupName="churchAndSpiritualInfo">
+    <!-- churchAndSpiritualInfo  form group-->
+    <div class="form-group" formGroupName="churchAndSpiritualInfo">
 
-        <!-- class number -->
-        <label for="class">
-          class number: </label>
-        <input class="form-control" type="text" placeholder="class" formControlName="class">
+      <!-- class number -->
+      <label for="class">
+        class number: </label>
+      <input class="form-control" type="text" placeholder="class" formControlName="class">
 
-        <!-- fatherOfConfession number -->
-        <label for="fatherOfConfession">
-          fatherOfConfession number: </label>
-        <input class="form-control" type="text" placeholder="fatherOfConfession" formControlName="fatherOfConfession">
+      <!-- fatherOfConfession number -->
+      <label for="fatherOfConfession">
+        fatherOfConfession number: </label>
+      <input class="form-control" type="text" placeholder="fatherOfConfession" formControlName="fatherOfConfession">
 
-        <!-- servantFollowing number -->
+      <!-- servantFollowing number -->
       <label for="class">
         servantFollowing number: </label>
       <input class="form-control" type="text" placeholder="servantFollowing" formControlName="servantFollowing">
@@ -115,13 +116,12 @@
         chomosya : </label>
       <input class="form-control" type="text" placeholder="chomosya" formControlName="chomosya">
 
-   <!-- Notes number -->
-   <label for="Notes">
-    Notes : </label>
-  <input class="form-control" type="text" placeholder="Notes" formControlName="Notes">
+      <!-- Notes number -->
+      <label for="Notes">
+        Notes : </label>
+      <input class="form-control" type="text" placeholder="Notes" formControlName="Notes">
 
-      </div>
-
+    </div>
 
 
     <button class="btn btn-primary" type="submit" [disabled]="!makhdouminForm.valid">Submit</button>
