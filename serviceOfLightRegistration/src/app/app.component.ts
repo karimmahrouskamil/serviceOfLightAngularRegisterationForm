@@ -27,7 +27,10 @@ this.makhdouminForm = new FormGroup({
       remarks: new FormControl('')
     }),
     Mobiles: new FormGroup({
-      MobilePhone : new FormControl('')
+      MobilePhone : new FormControl(''),
+      HomePhone : new FormControl(''),
+      fatherPhone : new FormControl(''),
+      motherPhone : new FormControl('')
     }),
   })
 });
